@@ -49,5 +49,5 @@ app.post('/htmlData', (req, res) => {
 app.use('/', express.static(path.join(__dirname, 'public')))
 
 app.listen(port, () => {
-  console.log(`Listening at 192.168.74.70:${port}`)
+  console.log(`Listening at http://192.168.74.70`)
 })
