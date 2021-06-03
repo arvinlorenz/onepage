@@ -28,7 +28,7 @@
 
         <script>
           var stringData = $.ajax({
-            url: 'http://localhost:3000/htmlData',
+            url: 'http://localhost:80/htmlData',
             async: false,
           }).responseText
           $('#editor').html(stringData).replace(/\n/g, '<br />')
@@ -120,7 +120,7 @@
                 $('#editorView').show()
               } else {
                 $.post(
-                  'http://localhost:3000/htmlData',
+                  'http://localhost:80/htmlData',
                   { data: editorData.toString() },
                   function (data) {
                     console.log(data)
